@@ -1,24 +1,15 @@
-# README
+# 建議
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+假設一間書店的營業時間為以下
 
-Things you may want to cover:
+* Mon. 10:00PM ~ 3:00AM
+* Tue. 10:00PM ~ 12:00AM
+* Wed. 10:00PM ~ 3:00AM
 
-* Ruby version
+雖然 Tue的 2:00am 為營業中，但是 Mon 的營業時間應該要為 5小時（10pm~3am) 而非 2小時（10pm~12pm)
 
-* System dependencies
 
-* Configuration
+# 問題
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* 原本想要把書本獨立出來，但是發現同一本書在不同的商店會有不同的價格，所以就不做了
+* 書不能find_by name, 會錯誤
